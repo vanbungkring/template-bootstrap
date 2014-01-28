@@ -1,0 +1,64 @@
+@import 'mixin.less';
+html, body,#map_canvas{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.supreme-container{
+	padding: 20px;
+}
+
+#search-section{
+	.border-radius(5px);
+	background: #fff;
+	width: 960px;
+	margin: 0 auto;
+	height: auto;
+	padding: 5px;
+	overflow: hidden;
+	.no-padding{
+		padding: 0px 5px;
+	}
+}
+
+#map-wrapper{
+	width: 60%;
+	height: 100%;
+	background: #000;
+	float: right;
+	overflow:hidden;
+	iframe {
+	   		position: absolute;
+	    	top: 0;
+	    	right: 0;
+	    	width: 60%;
+	    	height: 100%;
+	    	border: none;
+		}
+}
+.content-wrapper{
+	width: 40%;
+	overflow: scroll;
+	position: fixed;
+	top: 50px;
+	border-right: 1px solid #ccc;
+	height: 100%;
+	background: #fff;
+	float: left;
+	overflow:hidden;
+	.filter-header{
+		float: left;
+		height: 100px;
+		width: 100%;
+		border-bottom: 1px solid #ccc;
+	}
+}

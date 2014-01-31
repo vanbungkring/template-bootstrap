@@ -9,10 +9,11 @@
   <meta name="author" content="">
 
   <title>Fixed Top Navbar Example for Bootstrap</title>
-
+  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs1qmbiT6eTk-57wbzQ3Ivk8TRx02lXm4&sensor=true">
+    </script>
   <!-- Bootstrap core CSS -->
   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Custom styles for this template -->
   <link href="css/netra.css" rel="stylesheet">
 
@@ -30,34 +31,19 @@
 
       <!-- Fixed navbar -->
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+       
         <div class="container container-full">
+       
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" href="#">Kiviads</a>
           </div>
+       
+          <div class="search-section">
+              <input type="text" class="form-control search-box" placeholder="type your location" required>
+              <button type="button" class="btn btn-default search-button">Default</button>
+          </div>
+
           <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="../navbar/">Default</a></li>
               <li><a href="../navbar-static-top/">Static top</a></li>
@@ -68,22 +54,27 @@
       </div>
 
       <div class="container container-full fill">
-        
-        <div class="row content-wrapper">
-          <div class="filter-header"></div>
-        </div>
-
         <div id="map-wrapper">
-          <iframe src="http://mapsengine.google.com/map/embed?mid=z-BEFzFo7gdM.kYdiUKVQpQQI" width="640" height="480"></iframe>
-        </div>
+       </div>
 
-      </div> <!-- /container -->
+       <!-- filter -->
+       
+       <div class="row content-wrapper">
+        <div class="row filter">
+
+        </div>
+      </div>
+
+    </div> <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+   
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/gmaps.js"></script>
+    <script src="js/netra.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
   </body>
   </html>
